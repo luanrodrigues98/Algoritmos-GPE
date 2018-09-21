@@ -60,7 +60,13 @@ void printarMatriz(Matrix &mat, int l, int c){
 }
 int main()
 {
-    Matrix mat1(10,10);
+    int linha;
+    int coluna;
+    cout<<"Entre com o número de linhas e colunas"<<endl;
+    cin>>linha;
+    cin>>coluna;
+
+    Matrix mat1(linha,coluna);
     preencherMatriz(mat1, mat1.getLinha(), mat1.getColuna());
     printarMatriz(mat1, mat1.getLinha(), mat1.getColuna());
     cout<<endl;
@@ -70,8 +76,5 @@ int main()
     mat1[1][1]=4;
     printarMatriz(mat1, mat1.getLinha(), mat1.getColuna());
     cout<<endl;
-    Matrix mat2(5,5);
 
-    preencherMatriz(mat2, mat2.getLinha(), mat2.getColuna());
-    printarMatriz(mat2, mat2.getLinha(), mat2.getColuna());
 }
