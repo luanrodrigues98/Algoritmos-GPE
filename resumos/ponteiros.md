@@ -5,7 +5,7 @@ Ponteiro é uma variável que armazena um endereço de memória,são usadas por 3 raz
 3. Aumento de eficiência, já que acessando diretamente uma variável, pode-se otimizar o uso de memória. 
  
 Sua declaração é formato *nome_da_variável e possui o uso de dois operadores:
-* conteúdo do endereço apontado pelo ponteiro
+-* conteúdo do endereço apontado pelo ponteiro
 **&** endereço de memória
 
 Uma das aplicações mais específicas dos ponteiros é seu uso para criar estruturas encadeadas.
