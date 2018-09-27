@@ -1,3 +1,16 @@
 # Ponteiros
-Ponteiro é uma variável que armazena um endereço de memória, e que tem declaração no formato *nome_da_variável.
-Podem ser usados para alocação dinâmica de memória, ou para acessar variáveis que estão “encapsuladas”.
+Ponteiro é uma variável que armazena um endereço de memória,são usadas por 3 razões básicas:
+1. Permitir que funções alterem os valores de variáveis não globais ou não locais, passando o endereço de memória da variável como parâmetro para a função.
+2. Alocar ou desalocar memória em tempo de execução(alocação dinâmica).
+3. Aumento de eficiência, já que acessando diretamente uma variável, pode-se otimizar o uso de memória. 
+ 
+Sua declaração é formato *nome_da_variável e possui o uso de dois operadores:
+***** conteúdo do endereço apontado pelo ponteiro
+**&** endereço de memória
+
+Uma das aplicações mais específicas dos ponteiros é seu uso para criar estruturas encadeadas.
+
+
+
+[Referência 1](http://www.di.ufpb.br/liliane/aulas/ponteiros.html)
+[Referência 2](https://www.inf.pucrs.br/~pinho/PRGSWB/Ponteiros/ponteiros.html)
