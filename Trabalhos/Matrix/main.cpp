@@ -1,49 +1,19 @@
 #include <iostream>
+#include <gtest/gtest>
 #include "Matrix.cpp"
+#include "Matrix.h"
+#include "testes.h"
 
-int main()
+using namespace std
+
+int main(int argc, char **argv)
 {
-    int linha;
-    int coluna;
-    cout<<"Entre com o número de linhas e colunas da matriz 1"<<endl;
-    cin>>linha;
-    cin>>coluna;
-    cout<<endl;
+    ::testing::InitGoogleTest(&argc, argv);
+    Matrix mat (2,2);
+    preencherMatriz(mat);
+    printarMatriz(mat);
 
-    Matrix mat1(linha,coluna);
-    preencherMatriz(mat1);
-    printarMatriz(mat1);
-    cout<<endl;
+    return RUN_ALL_TESTS();
 
-    printarMatriz(mat1);
-
-    cout<<endl;
-
-    cout<<"Entre com o número de linhas e colunas da matriz 2"<<endl;
-    cin>>linha;
-    cin>>coluna;
-    cout<<endl;
-    Matrix mat2(linha, coluna);
-    mat2=mat1;
-    printarMatriz(mat2);
-    cout<<endl;
-
-    Matrix mat3(mat2);
-    printarMatriz(mat3);
-    cout<<endl;
-
-    Matrix mat4(mat2 + mat1);
-    cout<<"Soma:";
-    cout<<mat4<<endl;
-    cout<<mat2<<endl;
-
-    Matrix mat5(mat2 - mat1);
-    cout<<"Subtracao:";
-    cout<<mat5<<endl;
-
-    Matrix mat6(mat2*mat1);
-    cout<<"Multiplicacao:";
-    cout<<mat6<<endl;
-
-
+    //Mudança na main para inclusao dos testes.
 }

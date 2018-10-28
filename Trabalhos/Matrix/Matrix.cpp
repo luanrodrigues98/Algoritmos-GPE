@@ -36,6 +36,8 @@ void Matrix::preencher_zero(){
         }
     }
 }
+//Sobrecarga do operator *.
+//Sobrecarga para possibilitar a multiplicaçao de matrizes.
 
 Matrix Matrix::operator*(Matrix &mat){
     int l = mat.linha;
@@ -70,6 +72,9 @@ Matrix Matrix::operator*(Matrix &mat){
 
 }
 
+//Sobrecarga do operator +.
+//Sobrecarga para possibilitar a adiçao de matrizes.
+
 
 Matrix Matrix::operator+(Matrix &mat){
     int l = mat.linha;
@@ -91,6 +96,9 @@ Matrix Matrix::operator+(Matrix &mat){
     return aux;
 
 }
+
+//Sobrecarga do operator -.
+//Sobrecarga para possibilitar a subtraçao de matrizes.
 
 Matrix Matrix::operator-(Matrix &mat){
     int l = mat.linha;
